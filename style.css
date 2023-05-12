@@ -1,0 +1,155 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li,
+a,
+button {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Instrument Serif", serif;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+a {
+  transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  color: rosybrown;
+}
+
+.hero-container img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#services,
+#contact {
+  padding: 2em;
+}
+
+#services h1,
+#contact h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-address,
+.contact-hours {
+  padding: 1em;
+}
+
+.day {
+  text-align: left;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  padding: 1.5em;
+  text-align: center;
+}
