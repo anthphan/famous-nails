@@ -6,274 +6,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Famous Nails</title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
   <body>
     <header>
-      <a class="logo" href="#">Famous Nails</a>
-      <nav>
-        <ul class="nav__links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+        <div class="header__center">
+          <a class="logo" href="#">Famous Nails</a>
+        </div>
+        <nav class="header__right">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+          <ul class="nav__links" id="head">
+            <li><a class="nav__link active" href="#hero">Home</a></li>
+            <li><a class="nav__link" href="#photos">About</a></li>
+            <li><a class="nav__link" href="#services">Services</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
     <section id="hero">
       <div class="hero-container">
-        <img src="images/chelson-tamares-vtQHwU4F13s-unsplash.jpg" alt="" />
-        <h1 class="hero-text">Hello world!</h1>
+        <div class="hero-title">
+            <h1>Welcome to Famous Nails!</h1>
+        </div>
+        <div class="hero-text">
+            <p>Book an appointment with us today and experience the best in nail care.</p>
+        </div>
       </div>
     </section>
+
+    <span class="anchor" id="section1"></span>
+    <section id="photos">
+        <h1>About Us</h1>
+        <div class="photos__container">
+            <div class="gallery">
+                <img src="images/allison-christine-n4MHxHD1dKI-unsplash.jpg" alt="">
+            </div>
+            <div class="gallery">
+                <img src="images/allison-christine-RY9w18Eq-OM-unsplash.jpg" alt="">
+            </div>
+            <div class="gallery">
+                <img src="images/bryony-elena-tXwBDZS2JxQ-unsplash.jpg" alt="">
+            </div>
+            <div class="gallery">
+                <img src="images/patricia-hellinger-Y14F-1vzVds-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <div class="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime est magni porro veniam, quae voluptatem blanditiis pariatur provident ullam voluptas quisquam ad iste fugit consequatur sit nostrum totam rem.</p>
+        </div>
+    </section>
+
+    <span class="anchor" id="section2"></span>
     <section id="services">
-      <h1>Services</h1>
-      <div class="services-container">
-          <section>
-            <h2>Nail Services</h2>
-            <article class="service">
-              <p class="item">Acrylic Nail Full Set</p>
-              <p class="price">$35</p>
-            </article>
+      <h1>Our Services</h1>
 
-            <article class="service">
-              <p class="item">Fill In</p>
-              <p class="price">$25</p>
-            </article>
+      <div class="services">
+            <button class="collapsible">
+                <h2 class="service-title">Nail Services</h2>
+              </button>
+                <div class="services-container">
+                  <section class="nail-services">
+        
+                    <article class="service">
+                      <p class="item">Acrylic Nail Full Set</p>
+                      <p class="price">$35</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Fill In</p>
+                      <p class="price">$25</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Pink & White</p>
+                      <p class="price">$45</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">UV Gel Full Set</p>
+                      <p class="price">$38</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">UV Gel Full Set + Shellac</p>
+                      <p class="price">$45</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Fill In Gel</p>
+                      <p class="price">$28</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Fill In Gel + Shellac</p>
+                      <p class="price">$35</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Fill In Gel + French</p>
+                      <p class="price">$38</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Dipping Powder</p>
+                      <p class="price">$40</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Dipping With White French</p>
+                      <p class="price">$45</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Airbrush Design</p>
+                      <p class="price">$7 and up</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Overlay</p>
+                      <p class="price">$35</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Sculptured Nails</p>
+                      <p class="price">$45</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Spa Pedicure</p>
+                      <p class="price">$32</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Manicure</p>
+                      <p class="price">$18</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Manicure + Pedicure</p>
+                      <p class="price">$48</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Nail Art</p>
+                      <p class="price">$7 and up</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Polish Change</p>
+                      <p class="price">$12</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Nail Soak Off</p>
+                      <p class="price">$12</p>
+                    </article>
+                  </section>
+                </div>
 
-            <article class="service">
-              <p class="item">Pink & White</p>
-              <p class="price">$45</p>
-            </article>
+          
+    
+            <button class="collapsible">
+                <h2 class="service-title">Shellac</h2>
+            </button>
+            <div class="services-container">
+                <section>
+                    <article class="service">
+                    <p class="item">Shellac + French</p>
+                    <p class="price">$23</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac + Manicure</p>
+                    <p class="price">$30</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac + French + Manicure</p>
+                    <p class="price">$33</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac (Hand only)</p>
+                    <p class="price">$20</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac + Pedicure</p>
+                    <p class="price">$40</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac + French + Pedicure</p>
+                    <p class="price">$43</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac (Feet only)</p>
+                    <p class="price">$25</p>
+                  </article>
+    
+                  <article class="service">
+                    <p class="item">Shellac Take Off</p>
+                    <p class="price">$7</p>
+                  </article>
+                </section>
+            </div>
 
-            <article class="service">
-              <p class="item">UV Gel Full Set</p>
-              <p class="price">$38</p>
-            </article>
+    
 
-            <article class="service">
-              <p class="item">UV Gel Full Set + Shellac</p>
-              <p class="price">$45</p>
-            </article>
+                <button class="collapsible">
+                    <h2 class="service-title">BIO GEL</h2>
+                  </button>
+                  <div class="services-container">
+                    <section>
+                        <article class="service">
+                          <p class="item">Full Set</p>
+                          <p class="price">$50</p>
+                        </article>
+          
+                        <article class="service">
+                          <p class="item">Fill In</p>
+                          <p class="price">$40</p>
+                        </article>
+                      </section>
+                  </div>
+                    
+        
+                <button class="collapsible">
+                    <h2 class="service-title">Waxing</h2>
+                  </button>
+                <div class="services-container">
+                  <section>
+                    <h3 class="item-title">Legs</h1>
+                    <article class="service">
+                      <p class="item">Full</p>
+                      <p class="price">$50</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Half</p>
+                      <p class="price">$30</p>
+                    </article>
+        
+                    <h3 class="item-title">Arms</h1>
+                    <article class="service">
+                      <p class="item">Full</p>
+                      <p class="price">$30</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Half</p>
+                      <p class="price">$20</p>
+                    </article>
+        
+                    <h3 class="item-title">Face</h1>
+                    <article class="service">
+                      <p class="item">Full</p>
+                      <p class="price">$30</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Eyebrow</p>
+                      <p class="price">$7</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Lips</p>
+                      <p class="price">$5</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Chin</p>
+                      <p class="price">$6</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Sideburns</p>
+                      <p class="price">$8</p>
+                    </article>
+        
+                    <h3 class="item-title">Brazilian</h1>
+                    <article class="service">
+                      <p class="item">Under Arm</p>
+                      <p class="price">$15</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Back</p>
+                      <p class="price">$35</p>
+                    </article>
+        
+                    <article class="service">
+                      <p class="item">Bikini Line</p>
+                      <p class="price">$20</p>
+                    </article>
+                  </section>
+                </div>
 
-            <article class="service">
-              <p class="item">Fill In Gel</p>
-              <p class="price">$28</p>
-            </article>
 
-            <article class="service">
-              <p class="item">Fill In Gel + Shellac</p>
-              <p class="price">$35</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Fill In Gel + French</p>
-              <p class="price">$38</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Dipping Powder</p>
-              <p class="price">$40</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Dipping With White French</p>
-              <p class="price">$45</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Airbrush Design</p>
-              <p class="price">$7 and up</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Overlay</p>
-              <p class="price">$35</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Sculptured Nails</p>
-              <p class="price">$45</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Spa Pedicure</p>
-              <p class="price">$32</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Manicure</p>
-              <p class="price">$18</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Manicure + Pedicure</p>
-              <p class="price">$48</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Nail Art</p>
-              <p class="price">$7 and up</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Polish Change</p>
-              <p class="price">$12</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Nail Soak Off</p>
-              <p class="price">$12</p>
-            </article>
-          </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="services-container">
-          <div class="stack">
-            <section>
-              <h2>Shellac</h2>
-
-              <article class="service">
-                <p class="item">Shellac + French</p>
-                <p class="price">$23</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac + Manicure</p>
-                <p class="price">$30</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac + French + Manicure</p>
-                <p class="price">$33</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac (Hand only)</p>
-                <p class="price">$20</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac + Pedicure</p>
-                <p class="price">$40</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac + French + Pedicure</p>
-                <p class="price">$43</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac (Feet only)</p>
-                <p class="price">$25</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Shellac Take Off</p>
-                <p class="price">$7</p>
-              </article>
-            </section>
-
-            <div class="divider-two"></div>
-
-            <section>
-              <h2>BIO GEL</h2>
-              <article class="service">
-                <p class="item">Full Set</p>
-                <p class="price">$50</p>
-              </article>
-
-              <article class="service">
-                <p class="item">Fill In</p>
-                <p class="price">$40</p>
-              </article>
-            </section>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="services-container">
-          <section>
-            <h2 class="waxing-title">Waxing</h2>
-
-            <h1 class="item-title">Legs</h1>
-            <article class="service">
-              <p class="item">Full</p>
-              <p class="price">$50</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Half</p>
-              <p class="price">$30</p>
-            </article>
-
-            <h1 class="item-title">Arms</h1>
-            <article class="service">
-              <p class="item">Full</p>
-              <p class="price">$30</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Half</p>
-              <p class="price">$20</p>
-            </article>
-
-            <h1 class="item-title">Face</h1>
-            <article class="service">
-              <p class="item">Full</p>
-              <p class="price">$30</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Eyebrow</p>
-              <p class="price">$7</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Lips</p>
-              <p class="price">$5</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Chin</p>
-              <p class="price">$6</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Sideburns</p>
-              <p class="price">$8</p>
-            </article>
-
-            <h1 class="item-title">Brazilian</h1>
-            <article class="service">
-              <p class="item">Under Arm</p>
-              <p class="price">$15</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Back</p>
-              <p class="price">$35</p>
-            </article>
-
-            <article class="service">
-              <p class="item">Bikini Line</p>
-              <p class="price">$20</p>
-            </article>
-          </section>
-        </div>
+            <div class="giftcard">
+                <h3>Gift Certificates</h3>
+                <p>Available Here</p>
+            </div>
       </div>
     </section>
 
+    <span class="anchor" id="section3"></span>
     <section id="contact">
         <h1>Contact Us</h1>
       <div class="contact-container">
+        <div id="map">
+            <img src="images/taylor-vick-D2ArvCaoEAM-unsplash.jpg" alt="">
+        </div>
         <div class="contact-address">        
             <p><a href="https://goo.gl/maps/TB5abvYFh3nL5Wcg9">102 D Tillson Avenue. Tillsonburg, ON N4G 3A1</a></p>
         </div>
@@ -326,9 +378,11 @@
                 </tr>
             </table>
         </div>
+        <button class="book-btn"><a class="book" href="tel:15196881748">BOOK NOW</a></button>
       </div>
     </section>
 
     <footer>Copyright &copy; 2023 Famous Nails. All rights reserved</footer>
+    <script src="script.js"></script>
   </body>
 </html>
